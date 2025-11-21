@@ -46,7 +46,7 @@ cd fix_screen_scaling
 2. Make the script executable:
 
 ```bash
-chmod +x screen.sh
+chmod +x fix_screen.sh
 ```
 
 ## 💡 Usage
@@ -56,7 +56,7 @@ chmod +x screen.sh
 Let the script automatically calculate the optimal scale based on DPI matching:
 
 ```bash
-./screen.sh
+./fix_screen.sh
 ```
 
 The script will:
@@ -73,23 +73,23 @@ You can control how the primary display is aligned relative to the external disp
 
 **Center alignment (default):**
 ```bash
-./screen.sh -c
+./fix_screen.sh -c
 # or
-./screen.sh --center
+./fix_screen.sh --center
 ```
 
 **Left alignment:**
 ```bash
-./screen.sh -l
+./fix_screen.sh -l
 # or
-./screen.sh --left
+./fix_screen.sh --left
 ```
 
 **Right alignment:**
 ```bash
-./screen.sh -r
+./fix_screen.sh -r
 # or
-./screen.sh --right
+./fix_screen.sh --right
 ```
 
 ### Manual Scaling
@@ -97,7 +97,7 @@ You can control how the primary display is aligned relative to the external disp
 Specify a custom scaling factor for your external display:
 
 ```bash
-./screen.sh 1.5
+./fix_screen.sh 1.5
 ```
 
 Replace `1.5` with your desired scale factor (must be a positive number).
@@ -107,8 +107,8 @@ Replace `1.5` with your desired scale factor (must be a positive number).
 You can combine manual scaling with alignment options:
 
 ```bash
-./screen.sh 1.5 --right
-./screen.sh 1.25 -l
+./fix_screen.sh 1.5 --right
+./fix_screen.sh 1.25 -l
 ```
 
 ### Example Output
